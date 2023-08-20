@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+  <head>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+  </head>
+  <body>
+    <%= work.summary.to_xhtml.strip %>
+    <p class="character-count"><%= work.summary_character_count %> 字</p>
+
+    <% unless work.appeal.nil? %>
+      <h2>アピール文</h2>
+      <%= work.appeal.to_xhtml.strip %>
+      <p class="character-count"><%= work.appeal_character_count %> 字</p>
+    <% end %>
+  </body>
+</html>

@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "lib/genron_sf/ebook/kougai_generator/version"
-
 Gem::Specification.new do |spec|
   spec.name = "genron_sf-ebook-kougai_generator"
-  spec.version = GenronSF::EBook::KougaiGenerator::VERSION
+  spec.version = "0.1.0"
   spec.authors = ["Fuji Nakahara"]
   spec.email = ["fujinakahara2032@gmail.com"]
 
@@ -29,8 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "genron_sf", "~> 0.2.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
