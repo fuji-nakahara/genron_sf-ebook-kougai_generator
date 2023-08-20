@@ -2,9 +2,9 @@
 
 require_relative "kougai_generator/version"
 
-module GenronSf
-  module Ebook
-    module KougaiGenerator
+module GenronSF
+  module EBook
+    class KougaiGenerator
       class Error < StandardError; end
       # Your code goes here...
     end
